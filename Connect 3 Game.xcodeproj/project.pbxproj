@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		859A7E2C23B5C79100482344 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A7E2B23B5C79100482344 /* UserData.swift */; };
+		859A7E2E23B5C8D500482344 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A7E2D23B5C8D500482344 /* Constants.swift */; };
+		859A7E3223B7C58500482344 /* NetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A7E3123B7C58500482344 /* NetView.swift */; };
 		85FA554323B3823A0046EBCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FA554223B3823A0046EBCC /* AppDelegate.swift */; };
 		85FA554523B3823A0046EBCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FA554423B3823A0046EBCC /* SceneDelegate.swift */; };
 		85FA554723B3823A0046EBCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FA554623B3823A0046EBCC /* ContentView.swift */; };
 		85FA554923B382420046EBCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FA554823B382420046EBCC /* Assets.xcassets */; };
 		85FA554C23B382420046EBCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FA554B23B382420046EBCC /* Preview Assets.xcassets */; };
 		85FA554F23B382420046EBCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FA554D23B382420046EBCC /* LaunchScreen.storyboard */; };
+		85FA555A23B38BB60046EBCC /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FA555923B38BB60046EBCC /* Cell.swift */; };
+		85FA555C23B38D590046EBCC /* GameBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FA555B23B38D590046EBCC /* GameBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		859A7E2B23B5C79100482344 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		859A7E2D23B5C8D500482344 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Models/Constants.swift; sourceTree = "<group>"; };
+		859A7E3123B7C58500482344 /* NetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetView.swift; sourceTree = "<group>"; };
 		85FA553F23B3823A0046EBCC /* Connect 3 Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Connect 3 Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FA554223B3823A0046EBCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85FA554423B3823A0046EBCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		85FA554B23B382420046EBCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		85FA554E23B382420046EBCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85FA555023B382420046EBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85FA555923B38BB60046EBCC /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		85FA555B23B38D590046EBCC /* GameBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 		85FA554123B3823A0046EBCC /* Connect 3 Game */ = {
 			isa = PBXGroup;
 			children = (
+				859A7E2D23B5C8D500482344 /* Constants.swift */,
+				85FA555623B38B6F0046EBCC /* Models */,
 				85FA554223B3823A0046EBCC /* AppDelegate.swift */,
 				85FA554423B3823A0046EBCC /* SceneDelegate.swift */,
 				85FA554623B3823A0046EBCC /* ContentView.swift */,
@@ -63,6 +75,7 @@
 				85FA554D23B382420046EBCC /* LaunchScreen.storyboard */,
 				85FA555023B382420046EBCC /* Info.plist */,
 				85FA554A23B382420046EBCC /* Preview Content */,
+				859A7E3123B7C58500482344 /* NetView.swift */,
 			);
 			path = "Connect 3 Game";
 			sourceTree = "<group>";
@@ -73,6 +86,16 @@
 				85FA554B23B382420046EBCC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		85FA555623B38B6F0046EBCC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85FA555923B38BB60046EBCC /* Cell.swift */,
+				85FA555B23B38D590046EBCC /* GameBrain.swift */,
+				859A7E2B23B5C79100482344 /* UserData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				859A7E2C23B5C79100482344 /* UserData.swift in Sources */,
 				85FA554323B3823A0046EBCC /* AppDelegate.swift in Sources */,
+				859A7E3223B7C58500482344 /* NetView.swift in Sources */,
+				85FA555C23B38D590046EBCC /* GameBrain.swift in Sources */,
+				85FA555A23B38BB60046EBCC /* Cell.swift in Sources */,
+				859A7E2E23B5C8D500482344 /* Constants.swift in Sources */,
 				85FA554523B3823A0046EBCC /* SceneDelegate.swift in Sources */,
 				85FA554723B3823A0046EBCC /* ContentView.swift in Sources */,
 			);
@@ -285,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Connect 3 Game/Preview Content\"";
 				DEVELOPMENT_TEAM = LL8644SZWY;
 				ENABLE_PREVIEWS = YES;
@@ -293,10 +322,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.usemee.Connect-3-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Connect 3 Game/Preview Content\"";
 				DEVELOPMENT_TEAM = LL8644SZWY;
 				ENABLE_PREVIEWS = YES;
@@ -313,10 +344,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.usemee.Connect-3-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
